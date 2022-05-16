@@ -7,10 +7,15 @@ import org.springframework.stereotype.Component;
 public class Ocean1 {
 
     @Autowired
-    private Island2 island;
+    private Island2 island2;
+    public Ocean1(Island2 island2){
+        this.island2 = island2;
+    }
 
     @Override
     public String toString() {
-        return "на океане остров " + island.toString();
+        return "на океане остров " + island2.toString();
     }
+
+
 }
